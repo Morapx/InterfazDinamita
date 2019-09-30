@@ -1,0 +1,21 @@
+﻿<Window x:Class="InterfazDinamita.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfazDinamita"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="ComboLaLista" HorizontalAlignment="Left" Margin="153,31,0,0" VerticalAlignment="Top" Width="136" Height="26" SelectionChanged="ComboLaLista_SelectionChanged">
+            <ComboBoxItem>Alumnoo</ComboBoxItem>
+            <ComboBoxItem>Maestroo</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" Text="Nuevo" VerticalAlignment="Top" Height="39" Width="78" FontSize="18"/>
+        <Button x:Name="BotonAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="328,31,0,0" VerticalAlignment="Top" Width="131" Height="26" Click="BotonAgregar_Click"/>
+        <Grid x:Name="GrindPersonas" HorizontalAlignment="Left" Height="227" Margin="39,87,0,0" VerticalAlignment="Top" Width="715"/>
+        <Button x:Name="BotonGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="430,365,0,0" VerticalAlignment="Top" Width="100" Height="27" FontSize="16"/>
+        <Button x:Name="BotonCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="568,365,0,0" VerticalAlignment="Top" Width="115" Height="27"/>
+
+    </Grid>
+</Window>
