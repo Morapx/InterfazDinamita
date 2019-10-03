@@ -27,7 +27,17 @@ namespace InterfazDinamita
 
         private void ComboLaLista_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+          
+        }
+
+        private void BotonAgregar_Click(object sender, RoutedEventArgs e)
+        {
+            BotonGuardar.Visibility = Visibility.Visible;
+            GrindPersonas.Visibility = Visibility.Visible;
+            BotonCancelar.Visibility = Visibility.Visible;
+
             GrindPersonas.Children.Clear();
+
             switch (ComboLaLista.SelectedIndex)
             {
                 case 0:
@@ -40,14 +50,21 @@ namespace InterfazDinamita
                 default:
                     break;
             }
+
         }
 
-        private void BotonAgregar_Click(object sender, RoutedEventArgs e)
+        private void BotonGuardar_Click(object sender, RoutedEventArgs e)
         {
-            switch (ComboLaLista.SelectedIndex)
-            {
+            GrindPersonas.Visibility = Visibility.Hidden;           
+            BotonCancelar.Visibility = Visibility.Hidden;
+            BotonGuardar.Visibility = Visibility.Hidden;
+        }
 
-            }
+        private void BotonCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            GrindPersonas.Visibility = Visibility.Hidden;
+            BotonCancelar.Visibility = Visibility.Hidden;
+            BotonGuardar.Visibility = Visibility.Hidden;
         }
     }
 }

@@ -14,8 +14,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" Text="Nuevo" VerticalAlignment="Top" Height="39" Width="78" FontSize="18"/>
         <Button x:Name="BotonAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="328,31,0,0" VerticalAlignment="Top" Width="131" Height="26" Click="BotonAgregar_Click"/>
         <Grid x:Name="GrindPersonas" HorizontalAlignment="Left" Height="227" Margin="39,87,0,0" VerticalAlignment="Top" Width="715"/>
-        <Button x:Name="BotonGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="430,365,0,0" VerticalAlignment="Top" Width="100" Height="27" FontSize="16"/>
-        <Button x:Name="BotonCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="568,365,0,0" VerticalAlignment="Top" Width="115" Height="27"/>
+        <Button x:Name="BotonGuardar"  Content="Guardar" HorizontalAlignment="Left" Margin="430,365,0,0" VerticalAlignment="Top" Width="100" Height="27" FontSize="16" Click="BotonGuardar_Click"/>
+        <Button x:Name="BotonCancelar"  Content="Cancelar" HorizontalAlignment="Left" Margin="568,365,0,0" VerticalAlignment="Top" Width="115" Height="27" Click="BotonCancelar_Click"/>
 
     </Grid>
 </Window>
